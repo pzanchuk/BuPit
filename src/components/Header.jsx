@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import headerImage from '../assets/images/beers-header.jpg';
 
@@ -7,11 +8,9 @@ function Header(){
     <div>
       <style jsx>{`
         .main-header{
-
           background-color: #2f3a42;
           width: 1220px;
           margin: 0 auto;
-
         }
 
         .left-image img{
@@ -28,7 +27,6 @@ function Header(){
 
         .right-image{
           float:right;
-
         }
 
         .left-image > p{
@@ -66,10 +64,9 @@ function Header(){
           color: #3A4750;
           background-color: #EA9215;
         }
-
-
-
       `}</style>
+
+
       <div className="main-header">
         <div>
           <div className="left-image">
@@ -82,10 +79,10 @@ function Header(){
         </div>
         <div className="nav-bar">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Contact</a></li>
+          <li><Link to="/about">About</Link></li>
           </ul>
         </div>
       </div>
