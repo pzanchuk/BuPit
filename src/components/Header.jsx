@@ -4,6 +4,11 @@ import logo from '../assets/images/logo.png';
 import headerImage from '../assets/images/beers-header.jpg';
 
 function Header(){
+
+  const link = {
+    textDecoration: 'none'
+  }
+
   return (
     <div>
       <style jsx>{`
@@ -64,6 +69,10 @@ function Header(){
           color: #3A4750;
           background-color: #EA9215;
         }
+
+        link{
+            text-decoration: none;
+        }
       `}</style>
 
 
@@ -79,10 +88,10 @@ function Header(){
         </div>
         <div className="nav-bar">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">Contact</a></li>
-          <li><Link to="/about">About</Link></li>
+          <li><Link to="/" style={link}><a>Home</a></Link></li>
+          <li><Link to="/about" style={link}><a>News</a></Link></li>
+          <li><Link to="/about" style={link}><a>Contact</a></Link></li>
+          <li><Link to="/about" style={link}><a>About</a></Link></li>
           </ul>
         </div>
       </div>
