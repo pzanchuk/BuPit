@@ -23,7 +23,6 @@ function About(){
           position: inline-box;
           padding-left: 10px;
           margin-top: 50px;
-
           float: left;
         }
 

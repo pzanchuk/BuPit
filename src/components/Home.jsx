@@ -4,17 +4,12 @@ function Home(){
   return (
     <div>
       <style jsx>{`
-        .main-home {
-
-
-        }
-
         .irish-image > img{
           float: left;
           width: 1220px;
         }
 
-        h3{
+        h3, h1{
           padding-top: 20px;
           margin-top: 5px;
         }
@@ -25,6 +20,10 @@ function Home(){
           margin-top: 500px;
           margin-left: 470px;
           position: absolute;
+        }
+
+        .main-home{
+          height: 762px;
         }
 
 

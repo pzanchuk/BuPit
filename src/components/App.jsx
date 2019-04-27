@@ -15,15 +15,6 @@ function App(){
       margin: 'auto'
   }
 
-  const footer = {
-    right: 0,
-    bottom: 0,
-    left: 0,
-    padding: '1rem',
-    backgroundColor: 'lightgray',
-    textAlign: 'center'
-  }
-
   const back = {
     height: '2000px',
     backgroundColor: 'lightgray'
@@ -39,9 +30,7 @@ function App(){
           <Route path='/contact' component={Contact} />
           <Route path='/menu' component={Menu} />
         </Switch>
-        <div style={footer}>
           <Footer/>
-        </div>
       </div>
     </div>
 
