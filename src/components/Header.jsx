@@ -55,7 +55,7 @@ function Header(){
           display: block;
           color: #ffedd3;
           text-align: center;
-          padding: 14px 16px;
+          padding: 14px 28px;
           text-decoration: none;
         }
 

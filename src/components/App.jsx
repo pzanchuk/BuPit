@@ -16,17 +16,20 @@ function App(){
   }
 
   const footer = {
-    position: 'absolute',
     right: 0,
     bottom: 0,
     left: 0,
     padding: '1rem',
-    backgroundColor: '#efefef',
+    backgroundColor: 'lightgray',
     textAlign: 'center'
   }
 
+  const back = {
+    backgroundColor: 'lightgray'
+  }
+
   return (
-    <div>
+    <div style = {back}>
       <div style={main}>
         <Header/>
         <Switch>

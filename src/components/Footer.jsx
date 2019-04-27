@@ -4,7 +4,7 @@ function Footer(){
   return (
     <div>
       <style jsx>{`
-
+        
       `}</style>
 
       <div className="main-footer">
