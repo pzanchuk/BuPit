@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import About from "./About";
 import Home from "./Home";
 import Menu from "./Menu";
@@ -14,6 +15,16 @@ function App(){
       margin: 'auto'
   }
 
+  const footer = {
+    position: 'absolute',
+    right: 0,
+    bottom: 0,
+    left: 0,
+    padding: '1rem',
+    backgroundColor: '#efefef',
+    textAlign: 'center'
+  }
+
   return (
     <div>
       <div style={main}>
@@ -24,6 +35,9 @@ function App(){
           <Route path='/contact' component={Contact} />
           <Route path='/menu' component={Menu} />
         </Switch>
+        <div style={footer}>
+          <Footer/>
+        </div>
       </div>
     </div>
 

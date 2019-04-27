@@ -11,7 +11,7 @@ function Menue(){
       `}</style>
 
       <div className="main-menu">
-        Menue Works!
+        <p>Menue Works!</p>
       </div>
     </div>
 
