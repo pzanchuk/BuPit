@@ -25,6 +25,7 @@ function App(){
   }
 
   const back = {
+    height: '2000px',
     backgroundColor: 'lightgray'
   }
 
