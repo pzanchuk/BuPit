@@ -12,25 +12,19 @@ function Header(){
   return (
     <div>
       <style jsx>{`
-        .main-header{
-          background-color: #2f3a42;
-          width: 1220px;
-          margin: 0 auto;
-        }
-
-        .left-image img{
-          height: 230px;
-        }
-
-        .right-image img{
+        img{
           height: 230px;
         }
 
         .left-image{
+          padding: 0;
+          margin: 0;
           float: left;
         }
 
         .right-image{
+          padding: 0;
+          margin: 0;
           float:right;
         }
 
@@ -70,30 +64,26 @@ function Header(){
           background-color: #EA9215;
         }
 
-        link{
-            text-decoration: none;
-        }
+
       `}</style>
 
 
-      <div className="main-header">
-        <div>
-          <div className="left-image">
-            <p>T h e &nbsp; S o u l &nbsp; of &nbsp; F r i e n d s h i p</p>
-            <img src = {logo}/>
-          </div>
-          <div className="right-image">
-            <img src = {headerImage}/>
-          </div>
+      <div className="images">
+        <div className="left-image">
+          <p>T h e &nbsp; S o u l &nbsp; of &nbsp; F r i e n d s h i p</p>
+          <img src = {logo}/>
         </div>
-        <div className="nav-bar">
+        <div className="right-image">
+          <img src = {headerImage}/>
+        </div>
+      </div>
+      <div className="nav-bar">
         <ul>
           <li><Link to="/" style={link}><a>Home</a></Link></li>
-          <li><Link to="/about" style={link}><a>News</a></Link></li>
-          <li><Link to="/about" style={link}><a>Contact</a></Link></li>
+          <li><Link to="/menu" style={link}><a>Menu</a></Link></li>
+          <li><Link to="/contact" style={link}><a>Contact</a></Link></li>
           <li><Link to="/about" style={link}><a>About</a></Link></li>
-          </ul>
-        </div>
+        </ul>
       </div>
     </div>
 

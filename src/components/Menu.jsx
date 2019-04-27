@@ -1,19 +1,21 @@
 import React from "react";
 
-function About(){
+function Menue(){
   return (
+
     <div>
       <style jsx>{`
-        .main-about {
+        .main-menu {
           border: 1px solid black;
         }
       `}</style>
 
-      <div className="main-about">
-        <p>About Works!</p>
+      <div className="main-menu">
+        Menue Works!
       </div>
     </div>
+
   );
 }
 
-export default About;
+export default Menue;
