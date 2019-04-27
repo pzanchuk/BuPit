@@ -4,12 +4,10 @@ function Footer(){
   return (
     <div>
       <style jsx>{`
-        
+
       `}</style>
 
-      <div className="main-footer">
-        <p>Footer Works!</p>
-      </div>
+
     </div>
   );
 }
