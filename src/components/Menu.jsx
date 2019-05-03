@@ -1,8 +1,11 @@
 import React from "react";
+import Beer from "./Beer";
+import PropTypes from "prop-types";
 
-function Menue(){
+function Menu(props){
+  // console.log("Menu"+props);
+  
   return (
-
     <div>
       <style jsx>{`
         .main-menu {
@@ -11,11 +14,21 @@ function Menue(){
       `}</style>
 
       <div className="main-menu">
-        <p>Coming Soon!</p>
+        {props.beerList.map((beer) =>
+          <Beer name={beer.name}
+            alcohol={beer.alcohol}
+            price = {beer.price}
+            description = {beer.description}
+            key={beer.id}/>
+        )}
       </div>
     </div>
 
   );
 }
 
-export default Menue;
+Menu.propTypes = {
+  beerList: PropTypes.array,
+};
+
+export default Menu;

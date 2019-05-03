@@ -4,18 +4,20 @@ import { v4 } from 'uuid';
 // import Moment from 'moment';
 // import buttonImage from '../assets/images/button.png';
 
-function NewBeertForm(props){
+function NewBeerForm(props){
 
   let _name = null;
   let _alcohol = null;
+  let _price = null;
   let _description = null;
+  
 
   function handleNewBeerForm(event) {
     event.preventDefault();
-    props.onNewBeerCreation({name: _name.value, alcohol: _alcohol.value, description: _description, id: v4()});
+    props.onNewBeerCreation({name: _name.value, alcohol: parseDouble(alcohol.value), price: parseDouble(_price.value), description: _description.value, id: v4()});
     _name.value = '';
     _alcohol.value = '';
-    _description.value = '';
+    
   }
 
   return (
@@ -34,16 +36,21 @@ function NewBeertForm(props){
           ref={(input) => {_name = input;}} />
           <br/>
         <input
-          type='text'
+          type='number'
           id='alcohol'
-          placeholder='alcohol'
+          placeholder='Alc. by vol.'
           ref={(input) => {_alcohol = input;}} />
+          <br/>
+        <input
+          type='number'
+          id='price'
+          placeholder='Price per pint'
+          ref={(input) => {_price = input;}} />
           <br/>
         <textarea
           id='description'
-          placeholder='Describe this beer.'
-          ref={(textarea) => {_description = textarea;}} />
-          <br/>
+          placeholder='Beer description'
+          ref={(textarea) => {_description = textarea;}}/>
         <button type='submit'>Submit</button>
       </form>
     </div>
@@ -51,7 +58,7 @@ function NewBeertForm(props){
 }
 
 NewBeerForm.propTypes = {
-  onNewBeerCreation: PropTypes.func
+  onNewBeerCreation: PropTypes.func,
 };
 
 export default NewBeerForm;
