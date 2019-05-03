@@ -68,6 +68,10 @@ function Header(){
           float: right;
         }
 
+        .admin a:hover{
+          background-color: #ea6d15;
+        }
+
 
       `}</style>
 
