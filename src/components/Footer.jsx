@@ -8,18 +8,18 @@ function Footer(){
           text-align: center;
           background: #3A4750;
           margin-top: 5px;
-          height: 70px;
+          height: 120px;
         }
 
         p{
-          padding-top 25px;
+          padding-top 50px;
           margin-top 0;
           color: white;
           font-size: 12px;
         }
       `}</style>
       <div className="foot">
-        <p>Copyright Bu*Pit 2019</p>
+        <p>Copyright 2019</p>
       </div>
 
     </div>

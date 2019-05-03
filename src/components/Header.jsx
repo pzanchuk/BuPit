@@ -64,6 +64,10 @@ function Header(){
           background-color: #EA9215;
         }
 
+        .admin{
+          float: right;
+        }
+
 
       `}</style>
 
@@ -83,6 +87,7 @@ function Header(){
           <li><Link to="/menu" style={link}><a>Menu</a></Link></li>
           <li><Link to="/contact" style={link}><a>Contact</a></Link></li>
           <li><Link to="/about" style={link}><a>About</a></Link></li>
+          <li className="admin"><Link to="/newbeer" style={link}><a>Admin</a></Link></li>
         </ul>
       </div>
     </div>

@@ -37,13 +37,9 @@ class App extends React.Component{
             margin: auto;
           }
 
-          .back{
-            height: 2000px;
-            background-color: lightgray;
-          }
         `}</style>
 
-        <div className="back">
+        <div>
           <Header/>
           <Switch>
             <Route exact path='/' component={Home} />

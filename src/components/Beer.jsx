@@ -3,16 +3,22 @@ import PropTypes from "prop-types";
 
 function Beer(props){
   return (
-    <div>
+    <div className="wrapper">
       <style jsx>{`
+        .wrapper{
+          padding-left: 10px;
+          margin-top: 5px;
+          background-color: #3A4750;
+          border: 1px solid black;
+        }
 
       `}</style>
-
-      <h3>{props.name}</h3>
-      <h2>{props.alcohol}</h2>
-      <h2>{props.price}</h2>
-      <h2>{props.description}</h2>
-      
+      <div>
+        <h1>{props.name}</h1>
+        <h2>Alc. by Vol.: {props.alcohol}%</h2>
+        <h2>Price: ${props.price}</h2>
+        <h2>Description: {props.description}</h2>
+      </div> 
     </div>
   );
 }

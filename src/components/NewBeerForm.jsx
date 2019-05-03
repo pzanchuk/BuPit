@@ -14,17 +14,58 @@ function NewBeerForm(props){
 
   function handleNewBeerForm(event) {
     event.preventDefault();
-    props.onNewBeerCreation({name: _name.value, alcohol: parseDouble(alcohol.value), price: parseDouble(_price.value), description: _description.value, id: v4()});
+    props.onNewBeerCreation({name: _name.value, alcohol: parseFloat(alcohol.value), price: parseFloat(_price.value), description: _description.value, id: v4()});
     _name.value = '';
     _alcohol.value = '';
+    _price.value = '';
+    _description.value = '';
     
   }
 
   return (
     <div>
-      <hr/>
       <style jsx>{`
+        background: #3A4750;
+        
 
+        input{
+          background: white;
+          width: 200px;
+          margin-top: 10px;
+          padding: 10px;
+        }
+
+        textarea{
+          resize: none;
+          background: white;
+          width: 200px;
+          margin-top: 10px;
+          padding: 10px;
+        }
+
+        button{
+          padding: 12px 28px;
+          background-color: #EA9215;
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+
+        form{
+          margin-left: 10px;
+          margin-top: 5px;
+        }
+
+        h3{
+          color: white;
+          padding-top: 15px;
+          margin: 0;
+        }
       `}</style>
 
       <form onSubmit={handleNewBeerForm}>
@@ -36,13 +77,13 @@ function NewBeerForm(props){
           ref={(input) => {_name = input;}} />
           <br/>
         <input
-          type='number'
+          type='text'
           id='alcohol'
           placeholder='Alc. by vol.'
           ref={(input) => {_alcohol = input;}} />
           <br/>
         <input
-          type='number'
+          type='text'
           id='price'
           placeholder='Price per pint'
           ref={(input) => {_price = input;}} />
@@ -51,6 +92,7 @@ function NewBeerForm(props){
           id='description'
           placeholder='Beer description'
           ref={(textarea) => {_description = textarea;}}/>
+          <br/>
         <button type='submit'>Submit</button>
       </form>
     </div>

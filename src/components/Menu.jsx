@@ -9,7 +9,7 @@ function Menu(props){
     <div>
       <style jsx>{`
         .main-menu {
-          border: 1px solid black;
+          color: white;
         }
       `}</style>
 
