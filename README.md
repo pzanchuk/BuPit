@@ -8,7 +8,12 @@
 _React Friday Project. Local Pub website of multiple pages. React seems to be working faster than Angular._
 
 ## Specs
-
+* _Program accepts user input for beer name._
+* _Program accepts user input for beer alcohol._
+* _Program accepts user input for beer description._
+* _Program accepts user input for beer price._
+* _Program accepts user input for beer name._
+* _Program prints entered beer in Menu route._
 ![Routes](./src/assets/images/routes.png?raw=true)
 
 ## Known Bugs
