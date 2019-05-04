@@ -9,8 +9,15 @@ function Beer(props){
           padding-left: 10px;
           margin-top: 5px;
           background-color: #3A4750;
-          border: 1px solid black;
+          
         }
+
+        h1, h2{
+          margin: 0;
+          padding: 10px;
+        }
+
+    
 
       `}</style>
       <div>

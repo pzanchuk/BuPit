@@ -5,7 +5,7 @@ import About from "./About";
 import Home from "./Home";
 import Menu from "./Menu";
 import Contact from "./Contact";
-import NewBeerForm from './NewBeerForm';
+import Admin from './Admin';
 import { Switch, Route } from 'react-router-dom';
 
 
@@ -36,18 +36,16 @@ class App extends React.Component{
             margin-top: 0;
             margin: auto;
           }
-
         `}</style>
 
-        <div>
+        <div className="back">
           <Header/>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route exact path='newbeer' component={NewBeerForm} />
             <Route path='/about' component={About} />
             <Route path='/contact' component={Contact} />
             <Route path='/menu' render={()=><Menu beerList={this.state.masterBeerList} />} />
-            <Route path='/newbeer' render={()=><NewBeerForm onNewBeerCreation={this.handleAddingNewBeerToList} />} />
+            <Route path='/admin' render={()=><Admin onNewBeerCreation={this.handleAddingNewBeerToList} />} />
           </Switch>
             <Footer/>
         </div>

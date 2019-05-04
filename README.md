@@ -9,7 +9,7 @@ _React Friday Project. Local Pub website of multiple pages. React seems to be wo
 
 ## Specs
 
-![Routes](./src/assets/images/routes.jpg?raw=true)
+![Routes](./src/assets/images/routes.png?raw=true)
 
 ## Known Bugs
 

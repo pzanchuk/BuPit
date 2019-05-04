@@ -3,7 +3,6 @@ import Beer from "./Beer";
 import PropTypes from "prop-types";
 
 function Menu(props){
-  // console.log("Menu"+props);
   
   return (
     <div>

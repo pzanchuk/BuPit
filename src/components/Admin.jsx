@@ -4,7 +4,7 @@ import { v4 } from 'uuid';
 // import Moment from 'moment';
 // import buttonImage from '../assets/images/button.png';
 
-function NewBeerForm(props){
+function Admin(props){
 
   let _name = null;
   let _alcohol = null;
@@ -57,7 +57,7 @@ function NewBeerForm(props){
         }
 
         form{
-          margin-left: 10px;
+          padding-left: 10px;
           margin-top: 5px;
         }
 
@@ -99,8 +99,8 @@ function NewBeerForm(props){
   );
 }
 
-NewBeerForm.propTypes = {
+Admin.propTypes = {
   onNewBeerCreation: PropTypes.func,
 };
 
-export default NewBeerForm;
+export default Admin;
