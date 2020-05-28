@@ -5,7 +5,7 @@
 #### By _**Pavel Zanchuk**_
 
 ## Description
-_React Friday Project. Local Pub website of multiple pages. React seems to be working faster than Angular._
+_Local Pub website of multiple pages._
 
 ## Specs
 * _Program accepts user input for beer name._
